@@ -1,0 +1,7 @@
+#pragma once
+#define AUTO_SHIFT_TIMEOUT 350
+#define NO_AUTO_SHIFT_SPECIAL
+#define ONESHOT_TAP_TOGGLE 5000
+#define EXTRA_LONG_COMBOS
+
+
