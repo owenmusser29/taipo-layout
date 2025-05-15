@@ -35,7 +35,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             return false;
         case MACRO_2:
             if (record->event.pressed) {
-                SEND_STRING("733$");
+                SEND_STRING("*C1tyw0k");
             }
             return false;
         case MACRO_3:
@@ -108,7 +108,7 @@ const uint16_t PROGMEM F10[]     = {P5, P7, P8, P9, COMBO_END};                 
 const uint16_t PROGMEM F11[]     = {P5, P6, P8, P9, COMBO_END};                     //FN11 0000110110
 const uint16_t PROGMEM F12[]     = {P5, P6, P7, P9, COMBO_END};                     //FN12 0000111010
 const uint16_t PROGMEM SLASH[]   = {P2, P8, COMBO_END};                             /// 0100000100
-const uint16_t PROGMEM BSLASH[]  = {P5, P2, P8, COMBO_END};                         //\ 0100100100
+const uint16_t PROGMEM BSLASH[]  = {P10, P2, P8, COMBO_END};                         //\ 0100100100
 const uint16_t PROGMEM PIPE[]    = {P2, P8, P5, COMBO_END};                        //| 0100000101
 const uint16_t PROGMEM MINUS[]   = {P3, P7, COMBO_END};                             //- 0010001000
 const uint16_t PROGMEM UNDER[]   = {P10, P3, P7, COMBO_END};                         //_ 0010101000
@@ -236,7 +236,7 @@ combo_t key_combos[] = {
 
     COMBO(GUI, OSM(MOD_LGUI)),
     COMBO(CTRL, OSM(MOD_LCTL)),
-    COMBO(ALT, OSM(MOD_LALT)),
+    COMBO(ALT, OSM(MOD_HYPR)),
     COMBO(SFT, OSM(MOD_LSFT)),
     COMBO(ENTER, KC_ENTER),
     COMBO(TAB, KC_TAB),
